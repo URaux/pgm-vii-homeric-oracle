@@ -3,8 +3,6 @@ const oracles = window.PGM_VII_HOMERIC_ORACLES || {};
 const dieA = document.querySelector("#die-a");
 const dieB = document.querySelector("#die-b");
 const dieC = document.querySelector("#die-c");
-const rollText = document.querySelector("#roll-text");
-const keyText = document.querySelector("#key-text");
 const oracleText = document.querySelector("#oracle-text");
 const drawButton = document.querySelector("#draw-button");
 
@@ -20,8 +18,6 @@ function drawOracle() {
   dieA.value = roll[0];
   dieB.value = roll[1];
   dieC.value = roll[2];
-  rollText.textContent = roll.join("、");
-  keyText.textContent = key;
   oracleText.textContent = oracle;
 }
 
