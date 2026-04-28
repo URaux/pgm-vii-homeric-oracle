@@ -15,9 +15,9 @@ function drawOracle() {
   const key = `${roll[0]}-${roll[1]}-${roll[2]}`;
   const oracle = oracles[key] || "原文表格缺少这一条。请重新掷一次，或在源文本中补入此编号。";
 
-  dieA.value = roll[0];
-  dieB.value = roll[1];
-  dieC.value = roll[2];
+  dieA.textContent = roll[0];
+  dieB.textContent = roll[1];
+  dieC.textContent = roll[2];
   oracleText.textContent = oracle;
 }
 
